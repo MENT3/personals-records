@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <h1 class="py-4 text-3xl font-semibold">Personal records</h1>
+    <h1 class="pt-12 pb-6 text-3xl font-semibold">Personal records</h1>
     <div @click.prevent.stop>
       <RecordItem
         v-for="record in records"
