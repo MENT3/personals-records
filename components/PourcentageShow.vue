@@ -21,7 +21,13 @@ export default {
     ...mapState(['currentPourcentage']),
 
     calculatedRecord() {
-      return Math.round(this.record * (this.currentPourcentage / 100))
+      const calcul = Math.round(this.record * (this.currentPourcentage / 100))
+
+      if (isNaN(calcul)) {
+        return ''
+      } else {
+        return calcul
+      }
     },
 
     calculatedUnit() {
