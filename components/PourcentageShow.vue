@@ -17,6 +17,17 @@
 <script>
 import { mapState } from 'vuex'
 export default {
+  props: {
+    record: {
+      type: Number,
+      required: true
+    },
+    type: {
+      type: String,
+      required: true
+    }
+  },
+
   computed: {
     ...mapState(['currentPourcentage']),
 
@@ -33,17 +44,6 @@ export default {
     calculatedUnit() {
       if (this.type === 'w') return 'kg'
       else return ''
-    }
-  },
-
-  props: {
-    record: {
-      type: Number,
-      required: true
-    },
-    type: {
-      type: String,
-      required: true
     }
   }
 }
