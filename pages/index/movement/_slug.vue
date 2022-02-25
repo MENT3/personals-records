@@ -35,6 +35,7 @@
 <script>
 export default {
   name: 'MovementDetail',
+  transition: 'home',
   computed: {
     movement() {
       return this.$store.getters.getMouvementFromSlug(this.$route.params.slug)

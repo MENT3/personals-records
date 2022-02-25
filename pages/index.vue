@@ -22,6 +22,7 @@ import { mapState } from 'vuex'
 
 export default {
   name: 'HomePage',
+  transition: 'home',
   computed: mapState(['records'])
 }
 </script>
