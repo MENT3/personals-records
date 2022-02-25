@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="`/movement/${slug}`"
-    class="mx-4 mb-3 flex justify-between rounded-md bg-gray-100 px-4 py-3"
+    class="mx-4 mb-3 flex justify-between rounded-md bg-sky-100 px-4 py-3"
   >
     <div>
       {{ name }}

@@ -1,4 +1,5 @@
 export const state = () => ({
+  currentPourcentage: 50,
   records: [
     {
       slug: 'deadlift',
@@ -42,5 +43,11 @@ export const state = () => ({
 export const getters = {
   getMouvementFromSlug: (state) => (slug) => {
     return state.records.find((movement) => movement.slug === slug)
+  }
+}
+
+export const mutations = {
+  SET_CURRENT_POURCENTAGE(state, payload) {
+    state.currentPourcentage = parseInt(payload)
   }
 }
